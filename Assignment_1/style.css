@@ -1,3 +1,6 @@
+body{
+    background: #fffdd0;
+}
 .header {
     margin-bottom: 15px;
     display: flex;
@@ -19,9 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #66F52F;
-    
-
+    color: purple;
 }
 
 .container{
@@ -38,7 +39,6 @@
     flex-flow: row wrap;
     flex:0 1 auto;
     width: 200px;
-    color: #A85211;
     margin-right: 15px;
     margin-bottom: 15px;
 }
@@ -46,27 +46,33 @@
 .profile{
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    
     border-radius: 4px;
 }
 
 .statement{
+    
     border: 1px solid blue;
-    width: inherit;
+    max-width: 200px;
     padding: 30px;
+    background: white;
+    /* margin-bottom: 115px; */
+    color: #A85211;
+    
 
 }
 .experience{
     width: 600px;
+    border-radius: 4px;
+    border: 1px solid blue;
+    background: white;
 }
 
-
-
-.experience{
-    background: #FF00E6;
-}
 
 @media screen and (max-width: 1000px){
+    .header{
+        background: black;
+    }
     .container{
         justify-content:center;
     }
@@ -74,7 +80,10 @@
         flex-grow:1;
         flex-shrink:0;
         justify-content: space-evenly;
+        /* padding:2px; */
     }
+
+    .statement
     .experience{
         justify-content:center;
     }
