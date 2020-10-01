@@ -1,5 +1,5 @@
 .header {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     flex-flow: row wrap;
     color: purple;
@@ -43,6 +43,12 @@
     margin-bottom: 15px;
 }
 
+.profile{
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
 .statement{
     border: 1px solid blue;
     width: inherit;
@@ -53,11 +59,7 @@
     width: 600px;
 }
 
-.profile{
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 4px;
-}
+
 
 .experience{
     background: #FF00E6;
