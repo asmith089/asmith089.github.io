@@ -45,7 +45,7 @@
 
 .profile{
     width: 200px;
-    height: inherit;
+    height: 200px;
     border: 1px solid black;
     border-radius: 4px;
 }
