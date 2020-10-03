@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     color: purple;
-    background:#4AA85C;
+    background: darkgreen;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ body{
 .profile{
     width: 200px;
     height: 200px;
-    
+    border: 1px solid;
     border-radius: 4px;
 }
 
@@ -85,8 +85,6 @@ body{
         margin-bottom: 30px;
         /* padding:2px; */
     }
-
-    .statement{}
     .experience{
         justify-content:center;
     }
