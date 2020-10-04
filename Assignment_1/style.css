@@ -84,7 +84,7 @@ body{
         flex-shrink:0;
         justify-content: space-evenly;
         margin-bottom: 30px;
-        width: auto;
+        width: inherit;
     }
     .statement{
         align-self: center;
