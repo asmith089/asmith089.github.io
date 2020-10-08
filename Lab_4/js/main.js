@@ -1,3 +1,8 @@
+// Amari Smith
+// INST377
+// Lab 4
+// October 8, 2020
+
 let myFullName = "Amari Smith"; // 10 characters in name...not including space
 // 1 Change the content of the div with class "header" to "[Your name]'s Lab 4"
 
