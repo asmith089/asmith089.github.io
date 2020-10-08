@@ -10,12 +10,12 @@ myName.innerText = myFullName + "'s Lab 4";
 const myContent = document.querySelector(".content");
 
 const mp1 = document.createElement("p");
-mp1.className = "one";
+mp1.className = "content1";
 mp1.innerText = "Hello I am the first paragraph";
 myContent.appendChild(mp1);
 
 const mp2 = document.createElement("p");
-mp2.className = "two"
+mp2.className = "content2";
 mp2.innerText = "Second paragraph";
 myContent.appendChild(mp2);
 
