@@ -26,7 +26,7 @@ myContent.appendChild(mp2);
 
 // 3 Into the first paragraph, insert the phrase "my name has " length of your name " characters"
 //      (e.g. my name has 10 characters).
-let length = myFullName.length - 1
+let length = myFullName.length - 1;
 mp1.innerText = "My name has " + length + " characters.";
 
 // 4 & 5 Into the second paragraph tag, return the 3rd character in your first name
@@ -38,7 +38,7 @@ mp2.innerText = "The 3rd character in my name is " + third + ". \n" + "The last 
 
 // 8 Substring your first and last name into two separate variables
 const first = myFullName.substring(0,5);
-const last = myFullName.substring(5,11);
+const last = myFullName.substring(6,11);
 
 // 9 Add the total length of your first and last names together
 const total = first.length + last.length;
