@@ -244,7 +244,7 @@ const countriesList = [
   { name: "Zambia", code: "ZM" },
   { name: "Zimbabwe", code: "ZW" },
 ];
-console.log("List of countries in the world", countriesList);
+// console.log("List of countries in the world", countriesList);
 
 const myContent = document.querySelector(".content");
 const myButton = document.querySelector(".activate");
@@ -259,7 +259,11 @@ function showCountry() {
   ordered.innerHTML = " ";
   shuffleArray(countriesList);
   const shuffledCountriesList = countriesList.slice(0, 25);
-  // console.log(shuffledCountriesList);
+  
+  const filtered = countriesList.filter(function (x){
+    return shuffledCountriesList.indexOf(x) < 0;
+  });
+  console.log(filtered);
 
   const map1 = shuffledCountriesList.map((country) => {
     const li = document.createElement("li");
