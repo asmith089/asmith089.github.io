@@ -25,6 +25,11 @@ function getClasses(){
         });
     }
     else{
+        
         main.innerHTML = "No value provided";
+        sessionStorage.setItem("name", "Nothing Set");
+        sessionStorage.setItem("semester", "Nothing Set");
+        sessionStorage.setItem("credits", "Nothing Set");
+        sessionStorage.setItem("description", "Nothing Set");
     }
 }
