@@ -6,7 +6,9 @@ function getBusRoute() {
   if ((typeof busRoute !== "undefined") & (busRoute !== "")) {
     let busRouteURL = "https://api.umd.io/v0/bus/routes/" + busRoute; // Your code here
 
-    fetch(busRouteURL)
+    const fetchPromise = fetch(busRouteURL);
+
+    fetchPromise
       .then((response) => {
         return response.json();
       })
@@ -16,7 +18,6 @@ function getBusRoute() {
           let latMin = route.lat_min;
           let lonMax = route.lon_max;
           let lonMin = route.lon_min;
-          let nothing = "Nothing Set!";
 
           sessionStorage.setItem("title", title);
           sessionStorage.setItem("lat_max", latMax);
@@ -28,18 +29,18 @@ function getBusRoute() {
       .catch((err) => {
         console.log(err);
         main.innerHTML = "Invalid bus route";
-        sessionStorage.setItem("title", nothing);
-        sessionStorage.setItem("lat_max", nothing);
-        sessionStorage.setItem("lat_min", nothing);
-        sessionStorage.setItem("lon_max", nothing);
-        sessionStorage.setItem("lon_min", nothing);
+        sessionStorage.setItem("title", "Nothing Set");
+        sessionStorage.setItem("lat_max", "Nothing Set");
+        sessionStorage.setItem("lat_min", "Nothing Set");
+        sessionStorage.setItem("lon_max", "Nothing Set");
+        sessionStorage.setItem("lon_min", "Nothing Set");
       });
   } else {
     main.innerHTML = "No value provided";
-    sessionStorage.setItem("title", nothing);
-    sessionStorage.setItem("lat_max", nothing);
-    sessionStorage.setItem("lat_min", nothing);
-    sessionStorage.setItem("lon_max", nothing);
-    sessionStorage.setItem("lon_min", nothing);
+    sessionStorage.setItem("title", "Nothing Set");
+    sessionStorage.setItem("lat_max", "Nothing Set");
+    sessionStorage.setItem("lat_min", "Nothing Set");
+    sessionStorage.setItem("lon_max", "Nothing Set");
+    sessionStorage.setItem("lon_min", "Nothing Set");
   }
 }
