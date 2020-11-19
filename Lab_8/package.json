@@ -1,0 +1,23 @@
+{
+  "name": "smith_lab8",
+  "version": "1.0.0",
+  "description": "Lab 8 for INST377",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmith089/asmith089.github.io.git"
+  },
+  "author": "Amari Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmith089/asmith089.github.io/issues"
+  },
+  "homepage": "https://github.com/asmith089/asmith089.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
