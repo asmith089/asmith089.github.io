@@ -69,7 +69,6 @@ async function makeChart() {
                 type: "column",
                 name: "Popular Reddit",
                 dataPoints: chartValues
-                 // WHAT GOES HERE???
             }
         ]
     });
